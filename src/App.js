@@ -40,9 +40,9 @@ function App() {
   const handleChange = (e) => {
     const value = Number(e.target.value);
     if (mode === "Pages") {
-      setQuantity(Math.max(0, value));
+      setQuantity(Math.max(1, value)); 
     } else {
-      setQuantity(Math.max(0, value * WORDS_PER_PAGE));
+      setQuantity(Math.max(1, value)); 
     }
   };
 
